@@ -1,5 +1,8 @@
 FUNCTION_BLOCK FB_Silnik
 VAR_INPUT
+    xStart        : BOOL;   // przycisk START (NO)
+    xStop         : BOOL;   // przycisk STOP (NC: TRUE = nie wcisniety)
+    xEStop        : BOOL;   // obwod bezpieczenstwa OK (TRUE = zamkniety)
     xPotwierdzenie: BOOL;   // styk pomocniczy stycznika (TRUE = stycznik zalaczony)
     xReset        : BOOL;   // kasowanie awarii
 END_VAR
